@@ -1,4 +1,5 @@
 alias glgl='glg --author=Liang'
+alias nb='$HOME/Developer/scripts/nextBus/toOffice.sh'
 alias sdr1='screen -dR lliu1'
 alias sdr2='screen -dR lliu2'
 alias sdre2='ssh ec2 -t "screen -dR lliu2"'
