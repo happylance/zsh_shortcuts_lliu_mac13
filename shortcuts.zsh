@@ -1,6 +1,7 @@
 alias glgl='glg --author=Liang'
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
 alias nexta='ssh ec2 -t "tail /var/log/apache2/next/access.log"'
+alias nexte='ssh ec2 -t "tail /var/log/apache2/next/error.log"'
 alias sdr2='screen -dR lliu2'
 alias sdr='screen -dR lliu1'
 alias sdre2='ssh ec2 -t "screen -dR lliu2"'
