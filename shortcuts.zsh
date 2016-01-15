@@ -8,5 +8,5 @@ alias sdr='screen -dR lliu1'
 alias sdre2='ssh ec2 -t "screen -dR lliu2"'
 alias sdre='ssh ec2 -t "screen -dR lliu1"'
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
-alias utm="df -h | grep TimeMachine | awk '{printf }' | xargs diskutil unmountdisk"
 alias wh='which'
+utm() { df -h | grep TimeMachine | awk '{printf $1}' | xargs diskutil unmountdisk }
