@@ -1,3 +1,4 @@
+alias di='dict'
 alias glgl='glg --author=Liang'
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
 alias nexta='ssh ec2 -t "tail /var/log/apache2/next/access.log"'
@@ -8,6 +9,6 @@ alias sdr='screen -dR lliu1'
 alias sdre2='ssh ec2 -t "screen -dR lliu2"'
 alias sdre='ssh ec2 -t "screen -dR lliu1"'
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
-alias tcx='touch "$1" && chmod +x "$1"'
 alias wh='which'
+tcx() { touch "$1" && chmod +x "$1" }
 utm() { df -h | grep TimeMachine | awk '{printf $1}' | xargs diskutil unmountdisk }
