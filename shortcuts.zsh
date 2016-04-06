@@ -1,4 +1,3 @@
-alias di='dict'
 alias glgl='glg --author=Liang'
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
 alias nexta='ssh ec2 -t "tail /var/log/apache2/next/access.log"'
@@ -10,5 +9,8 @@ alias sdre2='ssh ec2 -t "screen -dR lliu2"'
 alias sdre='ssh ec2 -t "screen -dR lliu1"'
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
 alias wh='which'
+di() { open dict://$1 }
+dt() { dict -h dict.tw $1 | less }
+go() { search=""; echo "Googling: $@"; for term in $@; do search="$search%20$term" done; open "http://www.google.com/search?q=$search" }
 tcx() { touch "$1" && chmod +x "$1" }
 utm() { df -h | grep TimeMachine | awk '{printf $1}' | xargs diskutil unmountdisk }
