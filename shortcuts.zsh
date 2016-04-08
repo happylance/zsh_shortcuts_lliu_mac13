@@ -7,7 +7,9 @@ alias sdr2='screen -dR lliu2'
 alias sdr='screen -dR lliu1'
 alias sdre2='ssh ec2 -t "screen -dR lliu2"'
 alias sdre='ssh ec2 -t "screen -dR lliu1"'
+alias sew="sudo tcpdump -U -s0 -w - 'not port 22' | wireshark -k -i -"
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
+alias sxe='ssh -XC4c arcfour,blowfish-cbc ec2 -t "screen -dR lliu1"'
 alias wh='which'
 di() { open dict://$1 }
 dt() { dict -h dict.tw $1 | less }
