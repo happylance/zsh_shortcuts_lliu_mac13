@@ -1,3 +1,4 @@
+alias apti='$HOME/dev/htc/apt_installed.sh'
 alias aptni='$HOME/dev/htc/apt_not_installed.sh'
 alias aw='ansiweather'
 alias glgl='glg --author=Liang'
