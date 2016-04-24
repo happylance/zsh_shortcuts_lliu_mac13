@@ -1,3 +1,4 @@
+alias aptni='$HOME/dev/htc/apt_not_installed.sh'
 alias aw='ansiweather'
 alias glgl='glg --author=Liang'
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
@@ -11,7 +12,7 @@ alias sdr='screen -dR lliu1'
 alias sdre2='ssh ec2 -t "screen -U -dR lliu2"'
 alias sdre='autossh -M 0 ec2 -t "screen -U -dR lliu1"'
 alias sew="ssh ec2 sudo tcpdump -U -s0 -w - 'not port 22' | wireshark -k -i -"
-alias shtc='autossh htc'
+alias shtc='autossh -M 0 htc'
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
 alias sxe='autossh -M 0 -XC4c arcfour,blowfish-cbc ec2 -t "screen -U -dR lliu1"'
 alias wh='which'
