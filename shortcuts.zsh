@@ -1,3 +1,4 @@
+alias aw='ansiweather'
 alias glgl='glg --author=Liang'
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
 alias nexta='ssh ec2 -t "tail /var/log/apache2/next/access.log"'
@@ -7,11 +8,11 @@ alias pjl='python -m json.tool | less'
 alias psh='php -S 192.168.1.6:8888'
 alias sdr2='screen -dR lliu2'
 alias sdr='screen -dR lliu1'
-alias sdre2='ssh ec2 -t "screen -dR lliu2"'
-alias sdre='ssh ec2 -t "screen -dR lliu1"'
+alias sdre2='ssh ec2 -t "screen -U -dR lliu2"'
+alias sdre='autossh -M 0 ec2 -t "screen -U -dR lliu1"'
 alias sew="ssh ec2 sudo tcpdump -U -s0 -w - 'not port 22' | wireshark -k -i -"
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
-alias sxe='ssh -XC4c arcfour,blowfish-cbc ec2 -t "screen -dR lliu1"'
+alias sxe='autossh -M 0 -XC4c arcfour,blowfish-cbc ec2 -t "screen -U -dR lliu1"'
 alias wh='which'
 di() { open dict://$1 }
 dt() { dict -h dict.tw $1 | less }
