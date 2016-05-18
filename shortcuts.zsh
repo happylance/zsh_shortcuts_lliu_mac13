@@ -5,6 +5,7 @@ alias black_background='osascript -e "tell application \"Terminal\" to set backg
 alias black_text='osascript -e "tell application \"Terminal\" to set normal text color of window 1 to {0, 0, 0}"'
 alias cui='carthage update --platform iOS'
 alias glgl='glg --author=Liang'
+alias ip="ifconfig | grep -w inet | grep -v 127.0.0.1 | awk '{print }'"
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
 alias nexta='ssh ec2 -t "tail /var/log/apache2/next/access.log"'
 alias nexte='ssh ec2 -t "tail /var/log/apache2/next/error.log"'
