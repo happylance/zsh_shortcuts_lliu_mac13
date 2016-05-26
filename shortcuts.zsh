@@ -5,10 +5,10 @@ alias black_background='osascript -e "tell application \"Terminal\" to set backg
 alias black_text='osascript -e "tell application \"Terminal\" to set normal text color of window 1 to {0, 0, 0}"'
 alias cui='carthage update --platform iOS'
 alias glgl='glg --author=Liang'
-alias ip="ifconfig | grep -w inet | grep -v 127.0.0.1 | awk '{print }'"
 alias nb='$HOME/dev/scripts/nextBus/toOffice.sh'
 alias nexta='ssh ec2 -t "tail /var/log/apache2/next/access.log"'
 alias nexte='ssh ec2 -t "tail /var/log/apache2/next/error.log"'
+alias pbsay='pbpaste | ssh htc termux-tts-speak'
 alias pj='python -m json.tool'
 alias pjl='python -m json.tool | less'
 alias psh='php -S 192.168.1.6:8888'
@@ -30,6 +30,7 @@ di() { encoded=$(echo $@ | sed 's/ /%20/g'); open dict://$encoded; }
 dt() { dict -h dict.tw $1 | less }
 en() { [[ -d "$1" ]] && {cd "$1"; return}; [[ -f "$1" ]] && less $1 }
 go() { echo "Googling: $@"; search=$(echo $@ | sed 's/ /%20/g'); open "http://www.google.com/search?q=$search" }
+ip() { ifconfig | grep -w inet | grep -v 127.0.0.1 | awk '{print $2}' }
 tcx() { touch "$1" && chmod +x "$1" }
 utm() { df -h | grep TimeMachine | awk '{printf $1}' | xargs diskutil unmountdisk }
 wb() { white_background && black_text }
