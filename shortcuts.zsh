@@ -20,6 +20,7 @@ alias sdre2='ssh ec2 -t "screen -U -dR lliu2"'
 alias sdre='autossh -M 0 ec2 -t "screen -U -dR lliu1"'
 alias setl='autossh ec2 -t  tmux attach -t lliu'
 alias sew="ssh ec2 sudo tcpdump -U -s0 -w - 'not port 22' | wireshark -k -i -"
+alias sfsbsd='sshfs -o reconnect bsd:/home/freebsd/dev ~/dev/bsd'
 alias shtc='autossh -M 0 htc'
 alias sr='$HOME/dev/scripts/reminder/showReminder.sh'
 alias sxe='autossh -M 0 -XC4c arcfour,blowfish-cbc ec2 -t "screen -U -dR lliu1"'
